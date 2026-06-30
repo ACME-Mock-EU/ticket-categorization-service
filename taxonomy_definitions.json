@@ -1,0 +1,49 @@
+{
+  "ticket_categories": {
+    "billing_disputes": {
+      "name": "Billing Disputes",
+      "description": "Issues related to invoicing, billing cycles, and payment discrepancies",
+      "keywords": ["invoice", "billing", "charge", "payment issue"],
+      "parent_category": null,
+      "sla_minutes": 480
+    },
+    "password_reset": {
+      "name": "Password Reset",
+      "description": "User password reset requests and account lockout issues",
+      "keywords": ["password", "reset", "locked out", "login"],
+      "parent_category": "account_access",
+      "sla_minutes": 120
+    },
+    "account_access": {
+      "name": "Account Access",
+      "description": "General account access, provisioning, and authentication issues",
+      "keywords": ["access", "login", "account", "authentication"],
+      "parent_category": null,
+      "sla_minutes": 240
+    },
+    "payment_failure": {
+      "name": "Payment Failure",
+      "description": "Failed payment transactions and payment method issues",
+      "keywords": ["payment failed", "transaction", "card declined"],
+      "parent_category": "billing_disputes",
+      "sla_minutes": 360
+    },
+    "onboarding_setup": {
+      "name": "Onboarding Setup",
+      "description": "Initial setup and configuration for new customers",
+      "keywords": ["onboarding", "setup", "new account", "configure"],
+      "parent_category": null,
+      "sla_minutes": 240
+    },
+    "bug_report": {
+      "name": "Bug Report",
+      "description": "Software defects, errors, and unexpected behavior",
+      "keywords": ["bug", "error", "crash", "issue"],
+      "parent_category": null,
+      "sla_minutes": 480
+    }
+  },
+  "version": "2.0",
+  "last_updated": "2026-06-23",
+  "improvement_notes": "Clarified taxonomy - separated Billing from Payment, Account Access from Password Reset"
+}
